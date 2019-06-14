@@ -24,7 +24,7 @@ Versino: 0.59.9
 
 Starter: https://github.com/Microsoft/TypeScript-React-Native-Starter#typescript-react-native-starter
 
-### Prettier (with ts)
+### ESLint, Prettier (with ts)
 
 https://medium.com/@sgroff04/configure-typescript-tslint-and-prettier-in-vs-code-for-react-native-development-7f31f0068d2
 
