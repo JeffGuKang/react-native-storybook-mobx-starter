@@ -7,27 +7,16 @@
 - Storybook
 - MobX
 
-# Project Specification
+## Project Specification
 
-## React Native
+### React Native
 
 Versino: 0.59.9
 
-## Directory Structure (Atomic Design)
+### Storybook
 
-![Atomic](https://cdn-images-1.medium.com/max/2400/1*fSiixIK0shYrJkUuRvlcyA.png)
-
-http://bradfrost.com/blog/post/atomic-web-design/
-
-https://blog.prototypr.io/how-atomic-design-improves-development-structures-1eb4d617c7d6
-
-## Test
-
-Jest: https://jestjs.io/docs/en/getting-started
-
-## CI
-
-Travis CI
+- https://storybook.js.org/
+- CDD: https://blog.hichroma.com/component-driven-development-ce1109d56c8e
 
 ## Development Extensions
 
@@ -39,13 +28,9 @@ Starter: https://github.com/Microsoft/TypeScript-React-Native-Starter#typescript
 
 https://medium.com/@sgroff04/configure-typescript-tslint-and-prettier-in-vs-code-for-react-native-development-7f31f0068d2
 
-### MobX
+### Test
 
-https://mobx.js.org/
-
-### React Navigation 
-
-https://reactnavigation.org/
+Jest: https://jestjs.io/docs/en/getting-started
 
 # TroubleShooting
 
