@@ -11,6 +11,11 @@ export default class ThemeStore {
     secondary: 'blue',
   }
 
+  @computed
+  get ColorText() {
+    return `Color is: ${this.colors.primary} + ${this.colors.secondary}`
+  }
+
   @action updateColor = (colors: Colors) => {
     this.colors = colors
   }

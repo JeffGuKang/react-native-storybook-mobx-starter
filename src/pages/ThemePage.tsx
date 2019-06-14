@@ -24,6 +24,7 @@ export default class ThemePage extends Component<ThemePageProps> {
         <Text style={{ color: themeStore.colors.secondary }}>
           Secondary: {themeStore.colors.secondary}
         </Text>
+        <Text>{themeStore.ColorText}</Text>
       </View>
     )
   }

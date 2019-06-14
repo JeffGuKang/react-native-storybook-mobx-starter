@@ -1,12 +1,12 @@
-import { observable, action, reaction, computed } from 'mobx';
+import { observable, action, reaction, computed } from 'mobx'
 
 export interface Todo {
-  task: string;
-  isComplete: boolean;
+  task: string
+  isComplete: boolean
 }
 
 class TodoStore {
-  @observable todoList: Todo[] = [];
+  @observable todoList: Todo[] = []
 
   constructor() {
     // only execute second argument when the return value from the predicate changes of first argument.
@@ -14,26 +14,26 @@ class TodoStore {
       () => this.todoList.filter(todo => !todo.isComplete),
       incompletedTasks => {
         if (incompletedTasks.length > 5) {
-          console.log("Dude. You've got too much on your plate.");
+          console.log("Dude. You've got too much on your plate.")
         }
       }
-    );
+    )
   }
 
   @computed
   get completedTasks(): number {
-    return this.todoList.filter(todo => todo.isComplete).length;
+    return this.todoList.filter(todo => todo.isComplete).length
   }
 
   @action
   addTodo(task: string) {
-    this.todoList.push({ task, isComplete: false });
+    this.todoList.push({ task, isComplete: false })
   }
 
   @action
   completeTodo(completedTodo: Todo) {
-    this.todoList.find(todo => todo === completedTodo)!.isComplete = true;
+    this.todoList.find(todo => todo === completedTodo)!.isComplete = true
   }
 }
 
-export default TodoStore;
+export default TodoStore
