@@ -22,7 +22,9 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 })
 
-interface Props {}
+interface Props {
+  a: 'a'
+}
 class App extends Component<Props> {
   render() {
     return (
