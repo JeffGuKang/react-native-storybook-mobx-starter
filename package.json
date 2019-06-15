@@ -9,7 +9,8 @@
     "ios": "react-native run-ios --simulator='iPhone X'",
     "android": "react-native run-android",
     "watch": "./node_modules/typescript/bin/tsc -w",
-    "storybook": "start-storybook -p 7007"
+    "storybook": "start-storybook -p 7007",
+    "prestorybook": "rnstl"
   },
   "dependencies": {
     "mobx": "^5.10.1",
@@ -46,10 +47,18 @@
     "metro-react-native-babel-preset": "^0.54.1",
     "prettier": "^1.18.2",
     "react-dom": "16.8.3",
+    "react-native-storybook-loader": "^1.8.0",
     "react-test-renderer": "16.8.3",
     "typescript": "^3.5.1"
   },
   "jest": {
     "preset": "react-native"
+  },
+  "config": {
+    "react-native-storybook-loader": {
+      "searchDir": ["./src", "./packages"],
+      "pattern": "**/*.stories.js",
+      "outputFile": "./storybook/storyLoader.js"
+    }
   }
 }

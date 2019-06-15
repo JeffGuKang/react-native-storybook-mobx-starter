@@ -30,6 +30,7 @@ https://medium.com/@sgroff04/configure-typescript-tslint-and-prettier-in-vs-code
 
 ### Test
 
+Storybook: `yarn prestorybook`
 Jest: https://jestjs.io/docs/en/getting-started
 
 # TroubleShooting
