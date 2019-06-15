@@ -22,7 +22,7 @@ const TextButton: React.FC<TextButtonProps> = ({
   titleStyle,
 }: TextButtonProps) => {
   return (
-    <TouchableHighlight onPress={onPress}>
+    <TouchableHighlight onPress={onPress} underlayColor="transparent">
       <View style={[styles.buttonContainer, containerStyle]}>
         <Text style={[styles.titleStyle, titleStyle]}>{title}</Text>
       </View>
@@ -46,7 +46,7 @@ const IconButton = ({
   titleStyle,
 }: IconButtonProps) => {
   return (
-    <TouchableHighlight onPress={onPress}>
+    <TouchableHighlight onPress={onPress} underlayColor="transparent">
       <View style={[styles.buttonContainer, containerStyle]}>
         {icon}
         {title && <Text style={[styles.titleStyle, titleStyle]}>{title}</Text>}
@@ -57,11 +57,16 @@ const IconButton = ({
 
 const styles = StyleSheet.create({
   buttonContainer: {
-    width: 100,
-    height: 50,
+    width: 200,
+    height: 40,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
     backgroundColor: 'pink',
+    borderRadius: 15,
   },
   titleStyle: {
+    textAlign: 'center',
     color: 'white',
   },
 })

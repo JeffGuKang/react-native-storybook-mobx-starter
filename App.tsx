@@ -23,7 +23,7 @@ const instructions = Platform.select({
 })
 
 interface Props {
-  a: 'a'
+  a?: 'a'
 }
 class App extends Component<Props> {
   render() {
