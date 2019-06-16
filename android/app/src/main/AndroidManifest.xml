@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.onepixelclient">
+  package="com.jeffgukang.rn-sb-mobx-starter">
 
     <uses-permission android:name="android.permission.INTERNET" />
 

@@ -1,4 +1,24 @@
-# The One Client
+# react-native-storybook-mobx-starter
+
+React Native boilerplate applied storybook, mobx, typescript and eslint using RN 0.59.9.
+
+## Start
+
+- Normal: `yarn start`
+- Storybook: `yarn start:storybook`
+
+Do not forget use the `--reset-cache` option to apply environment variables when you start storybook from normal or opposit case. 
+
+after that, in other shell window 
+
+- ios: `yarn ios`
+- android: `yarn android`
+
+## Apply stories to Storybook
+
+`yarn prestorybook`
+
+It will automatically generate stories from *.stories.* files.
 
 ## Init
 
@@ -35,12 +55,4 @@ Jest: https://jestjs.io/docs/en/getting-started
 
 # TroubleShooting
 
-## Pod error
-
-pod 에러가 날 경우 업데이트 후 ios 폴더에서 pod install
-
-```
-cd ios
-gem update xcodeproj
-pod install
-```
+...

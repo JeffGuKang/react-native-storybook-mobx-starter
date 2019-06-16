@@ -3,5 +3,6 @@ module.exports = {
   plugins: [
     ['@babel/plugin-proposal-decorators', { legacy: true }],
     // ['@babel/plugin-proposal-class-properties', { loose: true }], // Cannot use with storybook
+    ['transform-inline-environment-variables'],
   ],
 }

@@ -1,9 +1,10 @@
 {
-  "name": "onepixel-client",
-  "version": "0.0.1",
+  "name": "react-native-storybook-mobx-starter",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "start": "STORYBOOK=false node node_modules/react-native/local-cli/cli.js start",
+    "start:storybook": "STORYBOOK=true node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
     "lint": "./node_modules/.bin/eslint  '*/**/*.{js,ts,tsx}'",
     "ios": "react-native run-ios --simulator='iPhone X'",
@@ -11,7 +12,8 @@
     "watch": "./node_modules/typescript/bin/tsc -w",
     "storybook": "start-storybook -p 7007",
     "prestorybook": "rnstl",
-    "reset": "watchman watch-del-all && rm -rf $TMPDIR/react-native-packager-cache-* && rm -rf $TMPDIR/metro-bundler-cache-* && rm -rf node_modules/ && yarn cache clean && yarn install && yarn start -- --reset-cache"
+    "reset": "watchman watch-del-all && rm -rf $TMPDIR/react-native-packager-cache-* && rm -rf $TMPDIR/metro-bundler-cache-* && rm -rf node_modules/ && yarn cache clean && yarn install",
+    "rename": "./node_modules/.bin/react-native-rename"
   },
   "dependencies": {
     "mobx": "^5.10.1",
@@ -45,6 +47,7 @@
     "@typescript-eslint/parser": "^1.10.2",
     "babel-jest": "^24.8.0",
     "babel-loader": "^8.0.6",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.3",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.3.0",
     "eslint-plugin-prettier": "^3.1.0",
@@ -54,6 +57,7 @@
     "metro-react-native-babel-preset": "^0.54.1",
     "prettier": "^1.18.2",
     "react-dom": "16.8.3",
+    "react-native-rename": "^2.4.1",
     "react-native-storybook-loader": "^1.8.0",
     "react-test-renderer": "16.8.3",
     "typescript": "^3.5.1"

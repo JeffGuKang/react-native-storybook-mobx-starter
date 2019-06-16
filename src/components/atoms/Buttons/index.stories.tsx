@@ -20,7 +20,7 @@ const ImageIcon = () => (
 )
 
 storiesOf('Components|Atoms|Buttons', module)
-  .addDecorator(getStory => {
+  .addDecorator((getStory: () => React.ReactNode) => {
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
         {getStory()}

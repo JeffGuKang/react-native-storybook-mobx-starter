@@ -1,4 +1,4 @@
-package com.onepixelclient;
+package com.jeffgukang.rn-sb-mobx-starter;
 
 import android.app.Application;
 

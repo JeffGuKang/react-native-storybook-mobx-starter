@@ -29,8 +29,12 @@ class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.tsx</Text>
+        <Text style={styles.welcome}>
+          Welcome to React Native Storybook MobX Starter
+        </Text>
+        <Text style={styles.instructions}>Try Storybook with </Text>
+        <Text style={styles.commend}>$ yarn start:storybook --reset-cache</Text>
+        <Text style={styles.instructions}>And reload.</Text>
         <Text style={styles.instructions}>{instructions}</Text>
       </View>
     )
@@ -54,10 +58,16 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
+  commend: {
+    textAlign: 'center',
+    color: 'blue',
+  },
 })
 
 const InjectedComponent = () => {
-  const ChildrenComponent = __DEV__ ? Storybook : App
+  const storybookRun = process.env.STORYBOOK
+  console.log('StoryBook: ', storybookRun)
+  const ChildrenComponent = storybookRun == 'true' ? Storybook : App
   return (
     <Provider {...stores}>
       <ChildrenComponent></ChildrenComponent>
