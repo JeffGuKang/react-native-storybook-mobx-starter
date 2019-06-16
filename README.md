@@ -1,4 +1,6 @@
-# The One Client
+# react-native-storybook-mobx-starter
+
+React Native boilerplate applied storybook, mobx, typescript and eslint using RN 0.59.9.
 
 ## Start
 

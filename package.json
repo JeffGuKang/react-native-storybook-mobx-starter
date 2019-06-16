@@ -1,6 +1,6 @@
 {
-  "name": "onepixel-client",
-  "version": "0.0.1",
+  "name": "react-native-storybook-mobx-starter",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "STORYBOOK=false node node_modules/react-native/local-cli/cli.js start",
