@@ -5,10 +5,18 @@
 - Normal: `yarn start`
 - Storybook: `yarn start:storybook`
 
+Do not forget use the `--reset-cache` option to apply environment variables when you start storybook from normal or opposit case. 
+
 after that, in other shell window 
 
 - ios: `yarn ios`
 - android: `yarn android`
+
+## Apply stories to Storybook
+
+`yarn prestorybook`
+
+It will automatically generate stories from *.stories.* files.
 
 ## Init
 
