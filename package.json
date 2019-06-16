@@ -12,7 +12,8 @@
     "watch": "./node_modules/typescript/bin/tsc -w",
     "storybook": "start-storybook -p 7007",
     "prestorybook": "rnstl",
-    "reset": "watchman watch-del-all && rm -rf $TMPDIR/react-native-packager-cache-* && rm -rf $TMPDIR/metro-bundler-cache-* && rm -rf node_modules/ && yarn cache clean && yarn install"
+    "reset": "watchman watch-del-all && rm -rf $TMPDIR/react-native-packager-cache-* && rm -rf $TMPDIR/metro-bundler-cache-* && rm -rf node_modules/ && yarn cache clean && yarn install",
+    "rename": "./node_modules/.bin/react-native-rename"
   },
   "dependencies": {
     "mobx": "^5.10.1",
@@ -56,6 +57,7 @@
     "metro-react-native-babel-preset": "^0.54.1",
     "prettier": "^1.18.2",
     "react-dom": "16.8.3",
+    "react-native-rename": "^2.4.1",
     "react-native-storybook-loader": "^1.8.0",
     "react-test-renderer": "16.8.3",
     "typescript": "^3.5.1"

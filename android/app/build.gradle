@@ -102,7 +102,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.onepixelclient"
+        applicationId "com.jeffgukang.rn-sb-mobx-starter"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
