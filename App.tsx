@@ -22,7 +22,9 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 })
 
-interface Props {}
+interface Props {
+  a?: 'a'
+}
 class App extends Component<Props> {
   render() {
     return (
@@ -55,7 +57,9 @@ const styles = StyleSheet.create({
 })
 
 const InjectedComponent = () => {
-  const ChildrenComponent = __DEV__ ? Storybook : App
+  const storybookRun = process.env.STORYBOOK
+  console.log('StoryBook: ', storybookRun)
+  const ChildrenComponent = storybookRun == 'true' ? Storybook : App
   return (
     <Provider {...stores}>
       <ChildrenComponent></ChildrenComponent>

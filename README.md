@@ -1,5 +1,23 @@
 # The One Client
 
+## Start
+
+- Normal: `yarn start`
+- Storybook: `yarn start:storybook`
+
+Do not forget use the `--reset-cache` option to apply environment variables when you start storybook from normal or opposit case. 
+
+after that, in other shell window 
+
+- ios: `yarn ios`
+- android: `yarn android`
+
+## Apply stories to Storybook
+
+`yarn prestorybook`
+
+It will automatically generate stories from *.stories.* files.
+
 ## Init
 
 - Typescript
@@ -30,16 +48,9 @@ https://medium.com/@sgroff04/configure-typescript-tslint-and-prettier-in-vs-code
 
 ### Test
 
+Storybook: `yarn prestorybook`
 Jest: https://jestjs.io/docs/en/getting-started
 
 # TroubleShooting
 
-## Pod error
-
-pod 에러가 날 경우 업데이트 후 ios 폴더에서 pod install
-
-```
-cd ios
-gem update xcodeproj
-pod install
-```
+...
