@@ -57,7 +57,9 @@ const styles = StyleSheet.create({
 })
 
 const InjectedComponent = () => {
-  const ChildrenComponent = __DEV__ ? Storybook : App
+  const storybookRun = process.env.STORYBOOK
+  console.log('StoryBook: ', storybookRun)
+  const ChildrenComponent = storybookRun == 'true' ? Storybook : App
   return (
     <Provider {...stores}>
       <ChildrenComponent></ChildrenComponent>

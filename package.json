@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "start": "STORYBOOK=false node node_modules/react-native/local-cli/cli.js start",
+    "start:storybook": "STORYBOOK=true node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
     "lint": "./node_modules/.bin/eslint  '*/**/*.{js,ts,tsx}'",
     "ios": "react-native run-ios --simulator='iPhone X'",
@@ -45,6 +46,7 @@
     "@typescript-eslint/parser": "^1.10.2",
     "babel-jest": "^24.8.0",
     "babel-loader": "^8.0.6",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.3",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.3.0",
     "eslint-plugin-prettier": "^3.1.0",

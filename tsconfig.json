@@ -5,7 +5,7 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "isolatedModules": true,
-    "noImplicitAny": false,
+    "noImplicitAny": true,
     "jsx": "react",
     "lib": ["es6"],
     "moduleResolution": "node",
