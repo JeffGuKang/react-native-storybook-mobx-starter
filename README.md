@@ -1,5 +1,15 @@
 # The One Client
 
+## Start
+
+- Normal: `yarn start`
+- Storybook: `yarn start:storybook`
+
+after that, in other shell window 
+
+- ios: `yarn ios`
+- android: `yarn android`
+
 ## Init
 
 - Typescript
@@ -35,12 +45,4 @@ Jest: https://jestjs.io/docs/en/getting-started
 
 # TroubleShooting
 
-## Pod error
-
-pod 에러가 날 경우 업데이트 후 ios 폴더에서 pod install
-
-```
-cd ios
-gem update xcodeproj
-pod install
-```
+...
