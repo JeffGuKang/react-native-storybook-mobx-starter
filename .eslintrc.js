@@ -26,7 +26,7 @@ module.exports =  {
       "@typescript-eslint/no-non-null-assertion": "off",
       "@typescript-eslint/no-use-before-define": "off",
       "@typescript-eslint/explicit-member-accessibility": 0,
-      "@typescript-eslint/member-delimiter-style": "none",
+      "@typescript-eslint/member-delimiter-style": "off",
       // "@typescript-eslint/member-delimiter-style": {
       //     delimiter: "none",
       //     requireLast: true,
